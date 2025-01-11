@@ -37,6 +37,7 @@ void CannonBall::Update() {
     }
     if (unit.second->IsHit(position_)) {
       game_core_->PushEventDealDamage(unit.first, id_, damage_scale_ * 10.0f);
+      unit.second->Dizzying(velocity_); // newly added
       should_die = true;
     }
   }

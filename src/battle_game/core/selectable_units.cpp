@@ -18,9 +18,7 @@ void GameCore::GeneratePrimaryUnitList() {
   selectable_unit_list_.push_back(unit->UnitName() + std::string(" - By ") + \
                                   unit->Author());
 
-  /*
-   * TODO: Add Your Unit Here!
-   * */
+  ADD_SELECTABLE_UNIT(unit::Jackson1330_Tank);
   ADD_SELECTABLE_UNIT(unit::Tank);
 
   unit.reset();

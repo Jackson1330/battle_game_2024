@@ -26,6 +26,7 @@ class Unit : public Object {
   [[nodiscard]] virtual float GetMaxHealth() const {
     return std::max(GetHealthScale() * BasicMaxHealth(), 1.0f);
   }
+  virtual void Dizzying(glm::vec2 bullet_velocity); // newly added
 
   /*
    * Health value is in range [0, 1], represents the remaining health in ratio

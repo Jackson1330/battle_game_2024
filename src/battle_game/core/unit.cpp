@@ -115,6 +115,9 @@ void Unit::RenderLifeBar() {
   }
 }
 
+void Unit::Dizzying(glm::vec2 bullet_velocity) {
+}
+
 void Unit::RenderHelper() {
 }
 
